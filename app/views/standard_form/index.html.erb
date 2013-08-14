@@ -1,0 +1,24 @@
+<h3>First form:</h3>
+
+
+<%= form_tag("../standard_form/accept", method: "get") do %>
+
+    <p>
+    <%= text_field_tag(:distance ) %>
+    <%= label_tag(:distance, "- dystans") %>
+    </p>
+    <p>
+    <%= text_field_tag(:consumption ) %>
+    <%= label_tag(:distance, "- spalanie") %>
+    </p>
+    <p>
+    <%= text_field_tag(:price ) %>
+    <%= label_tag(:distance, "- cena paliwa") %>
+    </p>
+
+
+    <%= submit_tag("Oblicz") %>
+<% end %>
+
+
+

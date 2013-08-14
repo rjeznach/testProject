@@ -1,0 +1,12 @@
+<h3>Formtastic form:</h3>
+<% @calculator = Calculator.new %>
+
+<%= semantic_form_for @calculator do |f| %>
+    <% f.inputs do %>
+        <%= f.input :distance, :label => "DYSTANS", :required => true %>
+        <%= f.input :consumption, :label => "SPALANIE", :required => true %>
+        <%= f.input :price, :label => "CENA", :required => true %>
+        <%= f.input :routeTolls, :as => :radio, :label => "OPLATY", :collection => [["Tak", true], ["Nie", false]] %>
+        <%= f.input :toll, :label => "WYSOKOSC OPLAT" %>
+    <% end %>
+<% end %>

@@ -1,4 +1,20 @@
 TestProject::Application.routes.draw do
+  resources :calculators
+
+  get "formtastic_form/index"
+
+  get "formtastic_form/accept"
+
+  get "standard_form/index"
+
+  get "standard_form/accept"
+
+  get "menu/_index"
+
+  get "menu/_click"
+
+  get "menu/click"
+
   get "main/Index"
 
   # The priority is based upon order of creation:

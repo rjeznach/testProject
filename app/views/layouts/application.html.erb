@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-               Layout part <hr/>
+
+<%= render :partial => "menu/index" %>
 <%= yield %>
+<%=  render :partial => "static/footer" %>
 
 </body>
 </html>

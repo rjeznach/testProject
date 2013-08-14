@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Distance:</b>
+  <%= @calculator.distance %>
+</p>
+
+<p>
+  <b>Consumption:</b>
+  <%= @calculator.consumption %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @calculator.price %>
+</p>
+
+<p>
+  <b>Routetolls:</b>
+  <%= @calculator.routeTolls %>
+</p>
+
+<p>
+  <b>Toll:</b>
+  <%= @calculator.toll %>
+</p>
+
+
+<%= link_to 'Edit', edit_calculator_path(@calculator) %> |
+<%= link_to 'Back', calculators_path %>
